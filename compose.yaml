@@ -35,8 +35,7 @@ services:
       DB_HOST: db
       DB_NAME: ${MYSQL_DATABASE}
       DB_USER: ${MYSQL_USER}
-      DB_PASSWORD: ${MYSQL_PASSWORD}
-      DB_ROOT_HOST: db
+      DB_PASSWORD: ${MYSQL_PASSWORD}      
     depends_on:
       db:
         condition: service_healthy
